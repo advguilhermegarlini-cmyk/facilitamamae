@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  /* Suas cores personalizadas */
+  --color-brand-gold: #d4af37;
+  --color-brand-gold-dark: #b89a30;
+  --color-github-bg: #0d1117;
+  --color-github-surface: #161b22;
+  --color-github-border: #30363d;
+  --color-github-text: #c9d1d9;
+  --color-github-muted: #8b949e;
+  --color-whatsapp: #25D366;
+
+  /* Sua fonte personalizada */
+  --font-sans: "Inter", sans-serif;
+}
+
+body {
+  /* border: 2px solid #d4af37; */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #161b22;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #49525e;
+}
+
+.markdown-body p {
+  margin-bottom: 1em;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.markdown-body strong {
+  color: #d4af37;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.pulsate {
+  animation: pulse 2s infinite;
+}
