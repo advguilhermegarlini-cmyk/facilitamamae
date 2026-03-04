@@ -361,7 +361,7 @@ const HomeScreen = ({ onStartIA }: { onStartIA: () => void }) => (
   </div>
 );
 
-import whatsappIcon from './image/whats.png';
+import whatsappIcon from '@/src/image/whats1.png';
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('home');
@@ -497,9 +497,9 @@ const App = () => {
         href="https://wa.me/5566999562660?text=Olá! Gostaria de tirar algumas dúvidas sobre o auxílio maternidade." 
         target="_blank" 
         rel="noopener noreferrer"
-        className="fixed bottom-0 right-0 z-50 transition-transform active:scale-95 pulsate rounded-full"
+        className="fixed bottom-6 right-6 z-50 transition-transform active:scale-95 pulsate rounded-full"
       >
-        <img src={whatsappIcon} alt="WhatsApp Icon" className="w-[250px] h-[250px] object-contain" />
+        <img src={whatsappIcon} alt="WhatsApp Icon" className="w-40 h-40 object-contain" />
       </a>
 
       {/* Rodapé */}
