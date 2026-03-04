@@ -265,21 +265,13 @@ const HomeScreen = ({ onStartIA }: { onStartIA: () => void }) => (
       <p className="text-base sm:text-lg md:text-xl text-github-muted max-w-2xl leading-relaxed px-4">
         Especialistas em garantir os benefícios de mães autônomas, MEIs e desempregadas. Análise técnica profunda baseada nas regras vigentes de 2026.
       </p>
-      <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-6 w-full sm:w-auto px-4">
+      <div className="flex flex-col sm:flex-row sm:justify-center gap-4 sm:gap-6 mt-6 w-full sm:w-auto px-4">
         <button 
           onClick={onStartIA}
           className="w-full sm:w-auto px-8 py-4 bg-brand-gold text-github-bg rounded-xl font-black text-lg hover:bg-brand-gold-dark transition-all shadow-[0_0_30px_rgba(212,175,55,0.2)] flex items-center justify-center gap-3 active:scale-95"
         >
           Analisar meu Pedido Agora <ChevronRight size={22} />
         </button>
-        <a 
-          href="https://www.instagram.com/" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="w-full sm:w-auto px-8 py-4 bg-github-surface border border-github-border text-white rounded-xl font-black text-lg hover:border-github-muted transition-all flex items-center justify-center gap-3 active:scale-95"
-        >
-          Ver Depoimentos <Instagram size={22} className="text-brand-gold" />
-        </a>
       </div>
     </motion.section>
 
@@ -369,7 +361,7 @@ const HomeScreen = ({ onStartIA }: { onStartIA: () => void }) => (
   </div>
 );
 
-import whatsappIcon from './image/whatsapp.avif';
+import whatsappIcon from './image/whats.png';
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('home');
@@ -505,12 +497,9 @@ const App = () => {
         href="https://wa.me/5566999562660?text=Olá! Gostaria de tirar algumas dúvidas sobre o auxílio maternidade." 
         target="_blank" 
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-24 h-24 rounded-full bg-whatsapp text-white shadow-2xl transition-transform active:scale-95 group pulsate"
+        className="fixed bottom-0 right-0 z-50 transition-transform active:scale-95 pulsate rounded-full"
       >
-        <img src={whatsappIcon} alt="WhatsApp Icon" className="w-16 h-16" />
-        <span className="absolute right-28 bg-github-surface text-white px-4 py-2 rounded-lg border border-github-border opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none text-sm font-bold">
-          Dúvidas? Fale comigo!
-        </span>
+        <img src={whatsappIcon} alt="WhatsApp Icon" className="w-[250px] h-[250px] object-contain" />
       </a>
 
       {/* Rodapé */}
