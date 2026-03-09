@@ -64,3 +64,34 @@ body {
 .pulsate {
   animation: pulse 2s infinite;
 }
+
+/* xs breakpoint para telas muito pequenas */
+@media (min-width: 400px) {
+  .xs\:inline { display: inline; }
+}
+
+/* Garante que imagens e vídeos não ultrapassem o container */
+img, video { max-width: 100%; }
+
+/* Evita overflow horizontal */
+html, body { overflow-x: hidden; }
+
+/* Tema claro */
+[data-theme="light"] {
+  --color-github-bg: #fafaf7;
+  --color-github-surface: #ffffff;
+  --color-github-border: #e5dfd0;
+  --color-github-text: #44403c;
+  --color-github-muted: #78716c;
+}
+
+[data-theme="light"] .text-white {
+  color: #1c1917 !important;
+}
+
+[data-theme="light"] .custom-scrollbar::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+[data-theme="light"] .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #e5dfd0;
+}
